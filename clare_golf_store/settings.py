@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-jkirkby95-claregolfstor-3ksxommqg60.ws-eu110.gitpod.io',
-    'local',
 ]
 
 
