@@ -5,9 +5,9 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -17,10 +17,10 @@
                 Clothing
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Polos</a>
-                <a href="" class="dropdown-item">Trousers</a>
-                <a href="" class="dropdown-item">Shorts</a>
-                <a href="" class="dropdown-item">All Clothing</a>
+                <a href="{% url 'products' %}?category=Polos," class="dropdown-item">Polos</a>
+                <a href="{% url 'products' %}?category=Trousers" class="dropdown-item">Trousers</a>
+                <a href="{% url 'products' %}?category=Shorts" class="dropdown-item">Shorts</a>
+                <a href="{% url 'products' %}?category=Polos,Trousers,Shorts" class="dropdown-item">All Clothing</a>
             </div>
         </li>
 
@@ -29,12 +29,12 @@
                 Clubs
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clubs-link">
-                <a href="" class="dropdown-item">Drivers</a>
-                <a href="" class="dropdown-item">Woods</a>
-                <a href="" class="dropdown-item">Irons</a>
-                <a href="" class="dropdown-item">Wedges</a>
-                <a href="" class="dropdown-item">Putter</a>
-                <a href="" class="dropdown-item">All Clubs</a>
+                <a href="{% url 'products' %}?category=Drivers" class="dropdown-item">Drivers</a>
+                <a href="{% url 'products' %}?category=Woods" class="dropdown-item">Woods</a>
+                <a href="{% url 'products' %}?category=Irons" class="dropdown-item">Irons</a>
+                <a href="{% url 'products' %}?category=Wedges" class="dropdown-item">Wedges</a>
+                <a href="{% url 'products' %}?category=Putter" class="dropdown-item">Putter</a>
+                <a href="{% url 'products' %}?category=Drivers,Woods,Irons,Wedges,Putter" class="dropdown-item">All Clubs</a>
             </div>
         </li>
 
@@ -43,10 +43,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=New_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=Deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=Clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=New_arrivals,Deals,Clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
