@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-jkirkby95-claregolfstor-3ksxommqg60.ws-eu110.gitpod.io',
+    '8000-jkirkby95-claregolfstor-3ksxommqg60.ws-eu112.gitpod.io',
 ]
 
 
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'products',
+    'bag',
 ]
 
 MIDDLEWARE = [
