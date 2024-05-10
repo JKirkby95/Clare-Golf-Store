@@ -1,0 +1,1 @@
+web: gunicorn clare_golf_store.wsgi:application
