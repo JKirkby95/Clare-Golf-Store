@@ -14,7 +14,11 @@ from checkout.models import Order
 def profile(request):
     """ Display the user's profile. """
     profile = get_object_or_404(UserProfile, user=request.user)
-    wishlist = get_object_or_404(Wishlist, user=request.user)
+    # Check if wishlist exists for the user
+    try:
+        wishlist = Wishlist.objects.get(user=request.user)
+    except Wishlist.DoesNotExist:
+        wishlist = None
 
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
@@ -37,6 +41,7 @@ def profile(request):
     }
 
     return render(request, template, context)
+
 
 
 @login_required
