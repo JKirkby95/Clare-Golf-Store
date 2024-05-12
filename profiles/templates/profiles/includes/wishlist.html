@@ -1,0 +1,40 @@
+{% if wishlist.products.all %}
+    <h2>Your Wishlist</h2>
+    <ul>
+        {% for product in wishlist.products.all %}
+            <li>
+                <p class="my-0"><strong>{{ product.name }}</strong></p>
+                <p class="my-0"><strong>Size: </strong>{% if product.has_sizes %}{{ product.size|upper }}{% else %}N/A{% endif %}</p>
+                <p class="my-0 small text-muted">SKU: {{ product.sku|upper }}</p>
+                {% if product.image %}
+                    <img class="img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
+                {% else %}
+                    <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                {% endif %}
+                <a href="#" class="remove-from-wishlist-btn text-danger" data-product-id="{{ product.id }}"><small>Remove</small></a>
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Your wishlist is empty.</p>
+{% endif %}
+
+<script>
+    $('.remove-from-wishlist-btn').click(function(e) {
+        e.preventDefault(); // Prevent the default action of the button
+        var productId = $(this).data('product-id');
+        var csrfToken = "{{ csrf_token }}";
+        var url = `profile/remove/${productId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken};
+
+        // Send a POST request to remove the item from the wishlist
+        $.post(url, data)
+        .done(function() {
+            // Reload the page or update the UI as needed
+            location.reload(); // For example, reload the page
+        })
+        .fail(function() {
+            console.error('Failed to remove item from wishlist');
+        });
+    });
+</script>
