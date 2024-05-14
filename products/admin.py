@@ -5,7 +5,7 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
         'name',
-        'display_categories',  # Corrected to reflect a many-to-many field
+        'display_categories',
         'price',
         'rating',
         'image',
