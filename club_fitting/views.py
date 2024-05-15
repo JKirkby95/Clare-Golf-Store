@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from .forms import ClubFittingForm
 from .models import Appointment
 from profiles.models import UserProfile
+from django.urls import reverse
 
 @login_required
 def appointments_list(request):
@@ -62,4 +63,6 @@ def delete_appointment_view(request, appointment_id):
     if appointment.user_profile.user == request.user:
         appointment.delete()
         messages.success(request, "Appointment deleted successfully.")
-    return redirect("appointments")
+    else:
+        messages.error(request, "You are not authorized to delete this appointment.")
+    return redirect(reverse("appointments"))

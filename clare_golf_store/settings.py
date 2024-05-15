@@ -216,3 +216,4 @@ else:
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
+
