@@ -10,46 +10,47 @@
 {% endblock %}
 
 {% block content %}
-<div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font text-black">
-                The new collections are here
-            </h1>
-            <div class="my-5">
-                <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
-                        Now</a>
-                </h4>
+<section class="hero bg-dark text-white py-5" >
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 col-md-6">
+                <h1 class="display-4">Elevate Your Game with Our Premium Golf Gear</h1>
+                <p class="lead">
+                    Discover the latest in golf clubs, apparel, and accessories to take
+                    your game to the next level. Shop top brands and exclusive collections designed for performance
+                    and style.
+                </p>
+                <a href="{% url 'products' %}" class="btn btn-dark text-uppercase py-3">Shop Now</a>
             </div>
         </div>
     </div>
-</div>
+</section>
+
 <!-- Newsletter -->
 {% include './includes/newsletter.html' %}
 {% endblock %}
 {% block postloadjs %}
 {{ block.super }}
-    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script type="text/javascript">
-        (function ($) {
-            window.fnames = new Array();
-            window.ftypes = new Array();
-            fnames[0] = 'EMAIL';
-            ftypes[0] = 'email';
-            fnames[1] = 'FNAME';
-            ftypes[1] = 'text';
-            fnames[2] = 'LNAME';
-            ftypes[2] = 'text';
-            fnames[3] = 'ADDRESS';
-            ftypes[3] = 'address';
-            fnames[4] = 'PHONE';
-            ftypes[4] = 'phone';
-            fnames[5] = 'BIRTHDAY';
-            ftypes[5] = 'birthday';
-        }(jQuery));
-        var $mcj = jQuery.noConflict(true);
-    </script>
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script type="text/javascript">
+    (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+        fnames[3] = 'ADDRESS';
+        ftypes[3] = 'address';
+        fnames[4] = 'PHONE';
+        ftypes[4] = 'phone';
+        fnames[5] = 'BIRTHDAY';
+        ftypes[5] = 'birthday';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+</script>
 </div>
 
 {% endblock %}

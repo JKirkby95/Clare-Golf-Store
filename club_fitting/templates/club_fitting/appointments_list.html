@@ -13,14 +13,14 @@
 
 {% block content %}
 <div class="overlay"></div>
-<h1 class="text-center" style="color: #f8f9fa; text-decoration: underline 1px solid #f8f9fa;">Appointments</h1>
+<h1 class="text-center" style=" text-decoration: underline 1px solid;">Appointments</h1>
 {% if appointments %}
-<p class="text-center" style="color: #f8f9fa;">Number of appointments: {{ appointments.count }}</p>
+<p class="text-center">Number of appointments: {{ appointments.count }}</p>
 <div class="row">
     <!-- display all appointments using a for loop -->
     {% for appointment in appointments %}
     <div class="col-md-6 mb-4">
-        <div class="card appointment-card bg-image border border-dark">
+        <div class="card appointment-card bg-image border border-black">
             <div class="card-body">
                 <strong>Date:</strong> {{ appointment.appointment_date }}<br>
                 <strong>Time:</strong> {{ appointment.appointment_time }}<br>
