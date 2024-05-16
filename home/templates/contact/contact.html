@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<h1>Contact Us</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {% if form.errors %}
+        <p style="color: red;">Please correct the error(s) below:</p>
+    {% endif %}
+    {{ form.as_p }}
+    <button type="submit">Send</button>
+</form>
+
+<!-- Newsletter -->
+{% include './includes/newsletter.html' %}
+{% endblock %}
+
+
+{% endblock %}
