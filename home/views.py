@@ -13,18 +13,15 @@ def contact_view(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
-            # Process the data in form.cleaned_data
-            name = form.cleaned_data['name']
-            email = form.cleaned_data['email']
-            message = form.cleaned_data['message']
-            # Send an email (for example)
+            contact_message = form.save()
+            # Optionally send an email
             send_mail(
-                f'Message from {name}',
-                message,
-                email,
-                ['jkirkby95@gmail.com'],
+                f'Message from {contact_message.name}',
+                contact_message.message,
+                contact_message.email,
+                ['your_email@example.com'],  # Replace with your email address
             )
-            return render(request, 'contact/success.html')
+            return render(request, 'home/contact_success.html')
     else:
         form = ContactForm()
-    return render(request, 'contact/contact.html', {'form': form})
+    return render(request, 'home/contact.html', {'form': form})
