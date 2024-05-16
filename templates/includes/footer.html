@@ -23,10 +23,18 @@
             <div class="col-md-3 col-sm-6">
                 <h4>Online Shop</h4>
                 <ul class="list-unstyled">
-                    <li><a href="#" class="text-black">Watch</a></li>
-                    <li><a href="#" class="text-black">Bag</a></li>
-                    <li><a href="#" class="text-black">Shoes</a></li>
-                    <li><a href="#" class="text-black">Dress</a></li>
+                    <li>
+                        <a href="{% url 'products' %}?category=Polos,Trousers,Shorts" class="text-black" aria-label="View all the  clothing products we stock">Clothing</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'products' %}?category=Drivers,Woods,Irons,Wedges,Putter" class="text-black" aria-label="View all the Clubs we stock">Clubs</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'products' %}?category=Balls,Bags,Accessories,Carts" class="text-black" aria-label="View all the Miscellaneous itesm we have in stock">Miscellaneous</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'book_appointment' %}" class="text-black" aria-label="Book a club fitting with one of our pros">Club  Fitting</a>
+                    </li>
                 </ul>
             </div>
             <div class="col-md-3 col-sm-6">
