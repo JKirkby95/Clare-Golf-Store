@@ -36,6 +36,21 @@ body {
     padding: 0.75rem 1.5rem;
 }
 
+/* product card styling */
+
+.card:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+.card i:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* product detail page */
+
+
 
 /* from Bulma */
 .icon {
@@ -105,7 +120,7 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
+    background: #292b2c !important;
     color: #fff !important;
 }
 
@@ -115,6 +130,11 @@ a.category-badge > span.badge:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
+}
+
+.btt-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
 }
 
 .btt-link,
@@ -223,6 +243,35 @@ input[name='q']::placeholder {
 .search-form .btn:focus {
     box-shadow: none;
 }
+
+/* Styling the "Keep Shopping" button */
+.btn-outline-black {
+    color: #343a40; /* Text color */
+    border-color: #343a40; /* Border color */
+}
+
+.btn-outline-black:hover {
+    color: #fff; /* Text color on hover */
+    background-color: #343a40; /* Background color on hover */
+    border-color: #343a40; /* Border color on hover */
+}
+
+/* Styling the "Add to Bag" button */
+.btn-black {
+    background-color: #343a40; /* Background color */
+    border-color: #343a40; /* Border color */
+}
+
+.btn-black:hover {
+    background-color: #212529; /* Background color on hover */
+    border-color: #212529; /* Border color on hover */
+}
+
+/* Styling the bag icon */
+.btn .fas.fa-shopping-bag {
+    margin-right: 5px; /* Adjusting the margin for better alignment */
+}
+
 
 /* -------------------------------- Media Queries */
 

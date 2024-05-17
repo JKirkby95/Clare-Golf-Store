@@ -42,6 +42,7 @@
     // Increment quantity
     $('.increment-qty').click(function(e) {
        e.preventDefault();
+       console.log('Increment button clicked');
        var itemId = $(this).data('item_id');
        var size = $(this).data('size');
        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
@@ -58,6 +59,7 @@
     // Decrement quantity
     $('.decrement-qty').click(function(e) {
        e.preventDefault();
+       console.log('Decrement button clicked');
        var itemId = $(this).data('item_id');
        var size = $(this).data('size');
        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
