@@ -196,7 +196,33 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+/* search bar and icon styling */
 
+.search-form .form-control {
+    background-color: #f8f9fa; /* Light Bootstrap background */
+    color: #495057; /* Text color */
+    box-shadow: none; /* Remove any box shadow */
+    padding-right: 45px; /* Adjust padding to make space for the icon */
+    border-top-right-radius: 0; /* Remove border radius on the right side */
+    border-bottom-right-radius: 0; /* Remove border radius on the right side */
+}
+
+.search-form .btn {
+    background-color: #f8f9fa; 
+    color: #495057; 
+    border: 1px solid #ced4da; 
+    z-index: 1; 
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0; 
+}
+
+.search-form .btn:hover {
+    background-color: #f8f9fa; 
+}
+
+.search-form .btn:focus {
+    box-shadow: none;
+}
 
 /* -------------------------------- Media Queries */
 
