@@ -8,6 +8,8 @@ body {
     font-family: 'Lato';
 }
 
+/*  hero styling */
+
 .hero {
     background-image: url('https://res.cloudinary.com/dnrt6ufwp/image/upload/v1715881263/ball-black-white-golf_edqdnz.jpg');
     background-size: cover;
@@ -34,6 +36,7 @@ body {
     padding: 0.75rem 1.5rem;
 }
 
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -51,12 +54,6 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
-}
-
 .btn-black {
     background: black;
     color: white;
@@ -64,7 +61,7 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important;
     border: 1px solid black;
 }
 
@@ -103,7 +100,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: #f8f9fa;
 	z-index: -1;
 }
 
