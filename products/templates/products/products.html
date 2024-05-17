@@ -65,7 +65,7 @@
             <div class="row">
                 {% for product in products %}
                 <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                    <div class="card h-100 border-0">
+                    <div class="card h-100 border-0 shadow">
                         {% if product.image %}
                         <a href="{% url 'product_detail' product.id %}">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}"
@@ -73,50 +73,46 @@
                         </a>
                         {% else %}
                         <a href="{% url 'product_detail' product.id %}">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png"
-                                alt="{{ product.name }}">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                         </a>
                         {% endif %}
                         <div class="card-body pb-0">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p class="card-text lead font-weight-bold">${{ product.price }}</p>
+                            {% if product.rating %}
+                            <p class="card-text text-muted"><i class=" text-warning fas fa-star"></i> {{ product.rating }} / 5</p>
+                            {% else %}
+                            <p class="card-text text-muted">No Rating</p>
+                            {% endif %}
                         </div>
                         <div class="card-footer bg-white pt-0 border-0 text-left">
-                            <div class="row">
+                            <div class="row align-items-center">
                                 <div class="col">
-                                    <p class="mb-0">{{ product.name }}</p>
-                                    <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
-                                    {% if product.category %}
-                                    <p class="small mt-1 mb-0">
-                                        <a class="text-muted"
-                                            href="{% url 'products' %}?category={{ product.category.name }}">
-                                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
-                                        </a>
-                                    </p>
-                                    {% endif %}
-                                    {% if product.rating %}
-                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} /
-                                        5</small>
-                                    {% else %}
-                                    <small class="text-muted">No Rating</small>
-                                    {% endif %}
-                                    {% if request.user.is_authenticated %}
-                                    <form action="{% url 'add_to_wishlist' product.id %}" method="post">
-                                        {% csrf_token %}
-                                        <button type="submit" class="btn btn-link">
-                                            <i class="fas fa-heart"></i> Add to Wishlist
-                                        </button>
-                                    </form>
-                                    {% endif %}
                                     {% if request.user.is_superuser %}
                                     <small class="ml-3">
-                                        <a href="{% url 'edit_product' product.id %}">Edit</a> |
-                                        <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                        <a href="{% url 'edit_product' product.id %}" class="text-secondary"><i class="fas fa-lg fa-pen"></i></a>
+                                        |
+                                        <a href="{% url 'delete_product' product.id %}" class="text-danger"><i class="fas fa-lg fa-trash-alt"></i></a>
                                     </small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer bg-white border-0 text-right">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    {% if request.user.is_authenticated %}
+                                    <form action="{% url 'add_to_wishlist' product.id %}" method="post" class="float-right">
+                                        {% csrf_token %}
+                                        <button type="submit" class="btn btn-link text-danger"><i class="fas fa-lg fa-heart"></i></button>
+                                    </form>
                                     {% endif %}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 {% if forloop.counter|divisibleby:1 %}
                 <div class="col-12 d-sm-none mb-5">
                     <hr>
