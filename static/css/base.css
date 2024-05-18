@@ -115,6 +115,16 @@ body {
     border-radius: 50px;
 }
 
+/* appointment screen */
+
+.inline-text {
+    display: inline-block;
+    text-align: center;
+    width: 100%; /* Ensure the text spans the full width of the column */
+    margin-top: 10px; /* Add some space between the card and the span */
+}
+
+
 /* from Bulma */
 .icon {
     align-items: center;

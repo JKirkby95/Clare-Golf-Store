@@ -8,28 +8,33 @@
     <div class="row">
         <div class="col"></div>
     </div>
-</div>
+</div> 
 {% endblock %}
-
+ 
 {% block content %}
 <div class="overlay"></div>
-<h1 class="text-center" style=" text-decoration: underline 1px solid;">Appointments</h1>
+<h1 class="text-center mt-5" style=" text-decoration: underline 1px solid;">{{ user }}'s Appointments</h1>
 {% if appointments %}
 <p class="text-center">Number of appointments: {{ appointments.count }}</p>
-<div class="row">
-    <!-- display all appointments using a for loop -->
+<div class="row justify-content-center" style="min-height: 400px;">
+    <!-- display all appointments using a for loop --> 
     {% for appointment in appointments %}
-    <div class="col-md-6 mb-4">
-        <div class="card appointment-card bg-image border border-black">
+    <div class="col-md-4 mb-4">
+        <div class="card border-black bg-dark text-light mb-3">
             <div class="card-body">
-                <strong>Date:</strong> {{ appointment.appointment_date }}<br>
-                <strong>Time:</strong> {{ appointment.appointment_time }}<br>
-                <strong>Customer:</strong> {{ appointment.customer }}<br>
-                <strong>Fitter:</strong> {{ appointment.fitter }}<br>
-                <strong>Service:</strong> {{ appointment.service }}<br>
-                <a href="{% url 'edit_appointment' appointment.id %}" class="btn btn-primary">Edit</a>
-                <a href="#" class="btn btn-danger delete-button" data-appointment-id="{{ appointment.id }}"
-                    data-toggle="modal" data-target="#deleteModal{{ appointment.id }}">Delete</a>
+                <h5 class="card-title">Appointment Details</h5>
+                <p class="card-text">
+                    <strong>Date:</strong> {{ appointment.appointment_date }}<br>
+                    <strong>Time:</strong> {{ appointment.appointment_time }}<br>
+                    <strong>Customer:</strong> {{ appointment.customer }}<br>
+                    <strong>Fitter:</strong> {{ appointment.fitter }}<br>
+                    <strong>Club:</strong> {{ appointment.club }}<br>
+                    <strong>Service:</strong> {{ appointment.service }}
+                </p>
+                <div class="d-flex justify-content-between">
+                    <a href="{% url 'edit_appointment' appointment.id %}" class="btn btn-primary">Edit</a>
+                    <a href="#" class="btn btn-danger delete-button" data-appointment-id="{{ appointment.id }}" data-toggle="modal" data-target="#deleteModal{{ appointment.id }}">Delete</a>
+                </div>
             </div>
         </div>
     </div>
@@ -58,7 +63,19 @@
 </div>
 {% else %}
 <!-- if there are no appointments display this -->
-<p class="text-center">No appointments found.</p>
+<div class="row justify-content-center mt-5" style="min-height: 400px;">
+    <div class="col-md-4 mb-4">
+        <div class="card border-black bg-dark text-light mb-3 text-center">
+            <h2 class="card-header bg-light text-dark mb-3">No appointments found.</h2>
+            <h5>Why not make an appointment today?</h5>
+            <p>If you don't buy the clubs you are being fitted for you don't pay!</p>
+        </div>
+        <span class="inline-text">
+            <a href="{% url 'book_appointment' %}" class="btn btn-dark btn-lg mt-3 mr-3">Book now!</a>
+            <a href="{% url 'products' %}?category=Drivers,Woods,Irons,Wedges,Putter" class="btn btn-dark btn-lg mt-3">Browse Clubs!</a>
+        </span>
+    </div>
+</div>
 {% endif %}
 
 <!-- import jQuery -->
