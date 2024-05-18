@@ -1,6 +1,7 @@
-from django.shortcuts import render
-from django.core.mail import send_mail
+from django.contrib import messages
+from django.shortcuts import render, redirect
 from .forms import ContactForm
+from django.core.mail import send_mail
 
 
 def index(request):
@@ -14,16 +15,17 @@ def contact_view(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             contact_message = form.save()
-            # Optionally send an email
             send_mail(
                 f'Message from {contact_message.name}',
                 contact_message.message,
                 contact_message.email,
-                ['your_email@example.com'],  # Replace with your email address
+                ['claregolfclub@example.com'],  
             )
-            return render(request, 'home/contact_success.html')
+            messages.success(request, 'Your message has been sent successfully!')
+            return redirect('home')
     else:
         form = ContactForm()
+
     return render(request, 'home/contact.html', {'form': form})
 
 
