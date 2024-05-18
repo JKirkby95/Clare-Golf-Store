@@ -101,10 +101,19 @@ body {
     transition: transform 0.3s ease;
 }
 
-.less-content {
-    min-height: 60vh; 
+/* profile styling  */
+
+.nav-pills .nav-link {
+    color: #343a40; 
 }
 
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #f8f9faf; 
+    background-color: #212529; 
+    border-color: #343a40; 
+    border-radius: 50px;
+}
 
 /* from Bulma */
 .icon {

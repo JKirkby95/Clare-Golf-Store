@@ -1,24 +1,43 @@
 {% if wishlist.products.all %}
     <h2>Your Wishlist</h2>
-    <ul>
+    <div class="row">
         {% for product in wishlist.products.all %}
-            <li>
-                <p class="my-0"><strong>{{ product.name }}</strong></p>
-                <p class="my-0"><strong>Size: </strong>{% if product.has_sizes %}{{ product.size|upper }}{% else %}N/A{% endif %}</p>
-                <p class="my-0 small text-muted">SKU: {{ product.sku|upper }}</p>
-                {% if product.image %}
-                    <img class="img-fluid rounded" src="{{ product.image.url }}" alt="{{ product.name }}">
-                {% else %}
-                    <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                {% endif %}
-                <a href="#" class="remove-from-wishlist-btn text-danger" data-product-id="{{ product.id }}"><small>Remove</small></a>
-            </li>
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow">
+                    {% if product.image %}
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    </a>
+                    {% else %}
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                    </a>
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.name }}</h5>
+                        <p class="card-text lead font-weight-bold">${{ product.price }}</p>
+                        {% if product.rating %}
+                        <p class="card-text text-muted"><i class=" text-warning fas fa-star"></i> {{ product.rating }} / 5</p>
+                        {% else %}
+                        <p class="card-text text-muted">No Rating</p>
+                        {% endif %}
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" class="remove-from-wishlist-btn text-danger" data-product-id="{{ product.id }}" title="Remove from Wishlist" data-toggle="tooltip" data-placement="top">
+                                    <i class="fas fa-lg fa-trash-alt"></i>
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
         {% endfor %}
-    </ul>
+    </div>
 {% else %}
     <p>Your wishlist is empty.</p>
 {% endif %}
-
 <script>
     $('.remove-from-wishlist-btn').click(function(e) {
         e.preventDefault(); // Prevent the default action of the button
@@ -38,3 +57,9 @@
         });
     });
 </script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
