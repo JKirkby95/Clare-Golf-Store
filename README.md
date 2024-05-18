@@ -138,3 +138,119 @@ Review system in place for products |  No (future feature) |
 ***
 
 ### Scope
+
+#### User Stories
+
+As it was my first time making an ecommerce site , my user stories are not in th best order, In the future I feel like instead of typing them straight into the [github projects](https://github.com/users/JKirkby95/projects/6) i will actually start on a piece of paper to get them in the correct order.
+
+**User Story 1**
+- View list of products
+    - As a user I would like to see a clear list of products so it's easy for me to make a purchase.
+    - This is a huge part of the store for me, I wanted the products to look great and it be very clear what they are.
+
+**User Story 2**
+- View product details
+    - As a user I would like to see more details about each product to help me make my decision.
+    - This again seemed like a massive part of a store to me , you need  to give the customer all the information they'd need to want to purchase the item.
+
+**User Story 3**
+- Shopping bag
+    -As a user I want to be able to view the items in my shopping bag and see the total cost.
+    - I wanted it to be very clear to the user what was in their bag and what it actually was going to cost them.
+
+**User Story 4**
+- Register for an account
+    - As a user I want to be able to register for an account.
+    - This is absolutely neccessary for me, I find I use sites more personally that have an account where all my details are saved. It makes the whole process so much smoother.
+
+**User Story 5**
+- Login
+    - As a user I want to be able to login to my account.
+    - Straight forward one really you need to be able to login if youre going to be accessing the site from multiple devices.
+
+**User Story 6**
+- Logout
+    - As a user I want to be able to logout of my account.
+    - Again this is abolutely neccessary to protect the user.
+
+**User story 7**
+- Have a profile
+    - As a user I want to be able to make a user profile to store my personal details.
+    - I love this feature like I said before, it makes everything so easy it's the main reason I use sites like amazon so much.
+
+**User story 8**
+- Sort Products
+    - As a user I want to be able to sort the products depending on what I'm searching for.
+    - This makes it much easier for the user to identify what they want and to view all the options in that price range or a certain brand.
+
+**User story 9**
+- Product Categories
+    - As a user I want to be able to search for products by categories.
+    - On a site like this that has so many products categories are essential, it means the user can only search throught the products they want to see.
+
+**User story 10**
+- Adjust bag
+    - As a user I want to be able to adjust the items in my shopping bag.
+    - This is needed if the user adds too much of one product or adds a product they didn't want to add in the first place.
+
+**User story 11**
+- Payment info
+    - As a user I want to be able to easily enter my payment information.
+    - Stripe was used for this the built in validation is fantastic makes the whole process so easy.
+
+**User story 12**
+- Order Confirmation
+    - As a user I want to be able to see an order confirmation after my order is placed.
+    - This was used to show the customer a receipt of their purchase and an order number to view thier order history.
+
+**User story 13**
+ - Add a product
+    - As an admin I want to be able to add products to the store.
+    - This is possible on this site either through the admin or the product management tab but this is ONLY for admins.
+
+**User story 14**
+- Edit/Update products
+    - As an admin I want to be able to edit a product or update some features about it.
+    - Again this feature is only available to the admin, but is a great feature if you wanted to update a prodicts price or details.
+
+**User story 15**
+- Delete a product
+    - As an admin I want to be able to delete a product from the store.
+    - This is an admin only feature again, it's needed if a product becomes obselete.
+
+**User story 16**
+- Make an order
+    - As a user I want to be able to make an order.
+    - The main point of the site really, again stripe helped massively with this.
+
+**User story 17**
+- wishlist
+    - As a user I want to be able to add items to my wishlist.
+    - This is yet another great feature that comes with having an acoount with us,
+    you can keep a product in their until it drops in price or you decide to buy it anyway.
+
+**User story 18**
+- Contact Form
+    - As a user I want to have a contact form available to make out of business hours requests.
+    - This is great for any feedback or queries a customer has.
+
+**User story 19**
+- Reviews
+    - As a user I want to be able to leave or view reviews of the store.
+    - I didn't get to add this feature but it's one I'd love to add. It could be attached to any product the pros who do the club fitting or the site in general.
+
+**User story 20**
+- Newsletter
+    - As a user I want to be able to sign up to a newsletter to receive future offers.
+    -  This is great for the site owner and the customer the user receives upcomign special and deals.
+
+**User Story 21**
+- Club Fitting
+    - As a user I want to be able to make an appointment for a club fitting.
+    - This ad's a luxury feature to any golf store and also ads crud functionality to the website for the user.
+
+[Back to top ⇧](#clare-golf-store)
+
+*** 
+
+### Structure
