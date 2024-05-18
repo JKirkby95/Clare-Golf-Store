@@ -78,6 +78,33 @@ body {
     margin-bottom: 1rem;
 }
 
+/* footer styling */
+
+.fa-facebook-f:hover {
+    color: #1877F2; /* Facebook blue  */
+    transform: rotate(5deg);
+    transition: transform 0.3s ease;
+}
+.fab.fa-linkedin-in:hover {
+    color: #0A66C2; /* Linked in blue  */
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease;
+}
+.fab.fa-twitter:hover {
+    color: #1DA1F2; /* twitter blue  */
+    transform: rotate(5deg);
+    transition: transform 0.3s ease;
+}
+.fab.fa-github:hover{
+    color: #181717; /* github black */
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease;
+}
+
+.less-content {
+    min-height: 60vh; 
+}
+
 
 /* from Bulma */
 .icon {

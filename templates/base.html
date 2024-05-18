@@ -128,7 +128,7 @@
     </div>
     <div id="delivery-banner" class="row text-center">
       <div class="col bg-warning text-dark">
-        <h5 class="logo-font my-1 ">Free delivery on orders over ${{ free_delivery_threshold }}!</h5>
+        <h5 id="delivery-text" class="logo-font my-1 animated-text">Free delivery on orders over ${{ free_delivery_threshold }}!</h5>
       </div>
     </div>
   </header>
@@ -157,18 +157,36 @@
   {% block content %}
   {% endblock %}
 
-<footer>
-
+<footer class="pt-5">
   {% include 'includes/footer.html' %}
-
 </footer>
 
   {% block postloadjs %}
 <script type="text/javascript">
     $('.toast').toast('show');
 </script>
-  {% endblock %}
+<script>
+  // Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+  // Text i want the delivery banner to animate between
+  const texts = [
+    "Free delivery on orders over ${{ free_delivery_threshold }}!",
+    "Return your item for free for up to 28 days!"
+  ];
 
+  // Get the element to update
+  const deliveryText = document.getElementById("delivery-text");
+
+  let index = 0;
+  setInterval(function() {
+    // Update the text content with the next line
+    deliveryText.textContent = texts[index];
+    // Increment index for the next text
+    index = (index + 1) % texts.length;
+  }, 5000); // Change text every 5 seconds 
+});
+</script>
+  {% endblock %}
 
 </body>
 

@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container mt-5">
+    <div class="row justify-content-center"> <!-- Center the row horizontally -->
+        <div class="col-lg-6"> <!-- Set the column width -->
+            <div class="card shadow mb-4">
+                <div class="card-header bg-dark text-light">
+                    <h5 class="mb-0">Payment Details</h5>
+                </div>
+                <div class="card-body bg-light">
+                    <p>We accept payments securely through Stripe.</p>
+                    <p>Stripe accepts the following cards:</p>
+                    <ul>
+                        <li>Visa</li>
+                        <li>Mastercard</li>
+                        <li>American Express</li>
+                        <li>Discover</li>
+                        <!-- Add more card types if needed -->
+                    </ul>
+                    <p>Refund Policy:</p>
+                    <p>We want you to be completely satisfied with your purchase. If for any reason you are not satisfied, we offer a hassle-free refund policy.</p>
+                    <ul>
+                        <li><strong>Refund Eligibility:</strong> To be eligible for a refund, the item must be unused and in the same condition that you received it. It must also be in the original packaging.</li>
+                        <li><strong>Refund Process:</strong> To initiate a refund, please contact our customer support team within 30 days of receiving your order. Once your return is received and inspected, we will process your refund.</li>
+                    </ul>
+                    <p>Please ensure that your billing information is correct to avoid any payment issues.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <div class="col-lg-6 text-center">
+            <h5 class="mb-3">Have Questions?</h5>
+            <a href="{% url 'contact' %}" class="btn btn-dark">Contact Us</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+

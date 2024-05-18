@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container mt-5">
+    <div class="row justify-content-center"> <!-- Center the row horizontally -->
+        <div class="col-lg-6"> <!-- Set the column width -->
+            <div class="card shadow mb-4">
+                <div class="card-header bg-dark text-light">
+                    <h5 class="mb-0">Shipping Details</h5>
+                </div>
+                <div class="card-body bg-light">
+                    <p>We currently offer shipping to the following countries:</p>
+                    <ul>
+                        <li>Ireland</li>
+                        <li>United Kingdom</li>
+                        <li>United States</li>
+                        <li>Canada</li>
+                    </ul>
+                    <p>Shipping fees may vary depending on the destination and the weight of the items in your order. Shipping costs will be calculated at checkout.</p>
+                    <p>Please allow 1-2 business days for processing and handling before your order is shipped. Once your order is shipped, you will receive a confirmation email with tracking information.</p>
+                    <p>If you have any questions about shipping or need assistance with your order, please feel free to contact us using the button below.</p>
+                    <p>Returns are free and accepted within 28 days of delivery.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+        <div class="col-lg-6 text-center">
+            <h5 class="mb-3">Have Questions?</h5>
+            <a href="{% url 'contact' %}" class="btn btn-dark">Contact Us</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

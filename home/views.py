@@ -25,3 +25,27 @@ def contact_view(request):
     else:
         form = ContactForm()
     return render(request, 'home/contact.html', {'form': form})
+
+
+def shipping_view(request):
+    """ A view to return the shipping page """
+
+    return render(request, 'home/shipping.html')
+
+
+def payment_view(request):
+    """ A view to return the payment options page """
+
+    return render(request, 'home/payment.html')
+
+
+def privacy_view(request):
+    """ A view to return the privacy policies page """
+
+    return render(request, 'home/privacy_policy.html')
+
+
+def about_view(request):
+    """ A view to return the about us page """
+
+    return render(request, 'home/about.html')
