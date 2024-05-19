@@ -44,10 +44,9 @@ View the deployed website [here](https://clare-golf-store-e14c88b1e5dd.herokuapp
     1. [Languages Used](#languages-used)
     2. [Libraries and Frameworks](#languages-and-frameworks)
     3. [Packages / Dependencies Installed](#packages--dependencies-installed)
-    4. [Database Management](#database-management)
-    5. [Payment Service](#payment-service)
-    6. [Cloud Storage](#cloud-storage)
-    7. [Tools and Programs](#tools-and-programs)
+    4. [Payment Service](#payment-service)
+    5. [Cloud Storage](#cloud-storage)
+    6. [Tools and Programs](#tools-and-programs)
 5. [Testing](#testing)
     1. [Go to TESTING.md](https://github.com/josswe26/noplast/blob/main/TESTING.md#noplast-testing)
 6. [Deployment](#deployment)
@@ -465,3 +464,109 @@ Clare Golf Store is committed to delivering exceptional products and services to
 ![404](media/404.png)
 
 - I also created pages for error 500 and 403 with a link to return to the home page.
+
+[Back to top ⇧](#clare-golf-store)
+
+***
+
+## Technologies Used
+
+### Languages Used
+
+-[HTML5](https://en.wikipedia.org/wiki/HTML)
+-[CSS3](https://en.wikipedia.org/wiki/CSS)
+-[JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+-[Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+***
+
+### Libraries and Frameworks
+
+-[Django](https://www.djangoproject.com/)   
+    -Django was used as web framework.
+
+-[Django Template](https://jinja.palletsprojects.com)  
+    -Django Template was used as a templating language for Django to display backend data to HTML.
+   
+-[Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)  
+    -Bootstrap 4 was used throughout the website to help with styling and responsiveness.
+
+-[Google Fonts](https://fonts.google.com)  
+    -Google fonts were used to import the fonts into the html file and were used on all parts of the site.
+
+-[Font Awesome](https://fontawesome.com)  
+    -Font Awesome was used throughout the website to add icons for aesthetic and UX purposes. 
+
+-[JQuery](https://jquery.com/)
+    - JQuery was used to help writing less javascript code
+
+***
+
+### Packages / Dependencies Installed
+
+- [Django Allauth](https://docs.allauth.org/en/latest/)
+    - -Django Allauth was used for user authentication, registration, and account management.
+
+- [Django Crispy Form](https://django-crispy-forms.readthedocs.io/en/latest/)
+    - Django cripsy forms were used to control the rendering of the forms. 
+
+- [Django Countries](https://pypi.org/project/django-countries/)
+    - Django Countries was used to provide country drop down for the profile and chackout apps.
+
+- [Pillow](https://pypi.org/project/Pillow/)
+    - Pillow was used to add image processing capabilities.  
+ 
+- [Gunicorn](https://gunicorn.org/)
+    - Gunicorn is a Python WSGI HTTP Server for UNIX.
+
+***
+
+[Back to top ⇧](#clare-golf-store)
+
+### Payment Service
+- [Stripe](https://docs.stripe.com/)
+    - The Stripe Python library provides an interface to interact with Stripe's API, enabling developers to integrate payment processing functionalities into their Python applications.
+
+***
+
+### Cloud Storage
+
+-[Elephantsql](https://www.elephantsql.com)
+    -Elephantsql was used to help host the Postgres database with Heroku
+
+-[Cloudinary](https://cloudinary.com/)
+    -Cloudinary was used to store all static files for this project
+
+***
+
+### Tools and Programs
+
+-[GitPod](https://gitpod.io/)
+     -GitPod was used for writing code, committing, and then pushing to GitHub.
+
+-[GitHub](https://github.com)  
+   GitHub was used to store the project's code after being pushed from Git. 
+
+-[Heroku](https://www.heroku.com)   
+    -Heroku was used to deploy the website.
+
+-[Elephantsql](https://www.elephantsql.com)
+    -Elephantsql was used to help host the Postgres database with Heroku.
+
+-[Am I Responsive](ami.responsivedesign.is)  
+    -Am I Responsive was used to preview the website across a variety of popular devices.
+
+-[Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+    -Chrome DevTools was used during development process for code review and to test responsiveness.
+
+-[W3C Markup Validator](https://validator.w3.org/)
+    -W3C Markup Validator was used to validate the HTML code.
+
+-[W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+    -W3C CSS Validator was used to validate the CSS code.
+
+-[JSHint](https://jshint.com/) 
+    -The JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
+
+-[Lucid Chart](https://lucid.app/)
+    - Lucid Chart was used to build the wireframes and database diagrams for this project.
