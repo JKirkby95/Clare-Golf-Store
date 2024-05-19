@@ -294,3 +294,74 @@ I used light over white so it's not quite as harsh on the eyes, and I'm personal
 The font used for this site is Nunito.
 
 Nunito is an excellent choice for your website's font due to its modern, clean, and highly readable design. As a sans-serif typeface, it provides a sleek and contemporary aesthetic that enhances the visual appeal of your site.
+
+***
+
+## Marketing
+
+
+### Search Engine Optimisation
+
+To enhance the search engine optimization (SEO) performance of the website, I had to research what words we should inlcude in the meta tags. The aim was to identify relevant keywords to optimize the seo performance of the site.
+
+Several search terms such as 'golf equipment,' 'golf accessories,' and 'club fittings' were analyzed to uncover popular keywords. From this analysis, a selection of both short and long-tail keywords was made and incorporated into the head element of the base.html template.
+
+The chosen keywords include:
+
+Golf clubs
+Golf equipment
+Golf accessories
+Golf fittings
+Golf apparel
+Golf bags
+Golf balls
+Golf gloves
+Golf technology
+
+Based on this analysis, adjustments may be made to the keyword selection to refine and improve SEO performance over time. By continuously refining these keywords, the website aims to achieve higher rankings on search engines like Google.
+
+
+### Business Model
+
+**Introduction**
+
+Clare Golf Store operates as both a physical and online retail platform specializing in high-quality golf equipment, accessories, and fittings. Established initially as a brick-and-mortar store, the business has transitioned to an omnichannel model to reach a broader customer base. This section outlines our business strategy, including key initiatives and considerations.
+
+**Online Presence**
+
+To expand our reach beyond our local market, we've established a strong online presence through our website and social media platforms. We've created a Facebook page to engage with customers, share updates, and promote products. Additionally, our website serves as an e-commerce platform, offering customers the convenience of shopping from anywhere.
+
+![facebook page](media/facebook.png)
+
+**Strengths**
+
+- Diverse Product Range: We offer a comprehensive selection of golf equipment, accessories, and fittings, catering to golfers of all skill levels.
+
+- Omnichannel Approach: By combining our physical store with an online presence, we provide customers with multiple touchpoints for purchasing products.
+
+- International Shipping: We ship to the UK, US, Canada, and Ireland, allowing us to tap into global markets and reach a wider audience.
+
+- Expertise and Customer Service: Our knowledgeable staff provide expert advice and personalized service, enhancing the overall customer experience.
+
+**Weaknesses**
+
+- Market Competition: The golf industry is highly competitive, with numerous established brands and retailers competing for market share.
+
+- Shipping Costs and Logistics: International shipping can be costly and complex, impacting profit margins and delivery times.
+
+- Brand Recognition: As a relatively new player in the online space, building brand awareness and trust among online customers is an ongoing challenge.
+
+**Future Growth Opportunities**
+
+- Expansion of Product Offerings: We plan to expand our product range to include additional golf-related categories such as apparel, training aids, and technology.
+
+- Enhanced Digital Marketing: Investing in targeted digital marketing campaigns to increase brand visibility and attract new customers.
+
+- Customer Loyalty Programs: Implementing loyalty programs and incentives to encourage repeat purchases and foster customer loyalty.
+
+- Partnerships and Collaborations: Exploring strategic partnerships with golf clubs, instructors, and other industry players to expand our reach and customer base.
+
+**Conclusion**
+
+Clare Golf Store is committed to delivering exceptional products and services to golf enthusiasts worldwide. With a strong emphasis on quality, expertise, and customer satisfaction, we strive to become a leading destination for all golfing needs, both online and offline.
+
