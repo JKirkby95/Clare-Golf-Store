@@ -778,7 +778,7 @@ Ultra wide monitor | Some appearance issues, but functionality all good | Fail (
     Wishlist | The remove from wishlist button and the javascript text for it work as expected | Pass
     About us | Map displays correctly and in the right location | Pass
     Privacy Policy | Page displays correctly and the contact button sends the user to the contact us form | Pass
-    Shipping | Page displays correctly and the contact button sends the user to the contact us form | 
+    Shipping | Page displays correctly and the contact button sends the user to the contact us form | Pass
     Payment Options | Page displays correctly and the contact button sends the user to the contact us form | Pass
     Contact Us Form | Form works as expected and is displayed correctly | Pass
     Contact Us From Validation | From validation works as expected, the name ,email and message fiels are required. The last field is NOT. | Pass
@@ -805,10 +805,10 @@ To use and further develop this project you can clone the repository.
 
     - 5. **Clone the Repository**: Once you're in the desired directory, use the `git clone` command followed by the URL you copied earlier. It should look something like this:
 
-    ```bash
-    git clone https://github.com/username/repository.git
+                ```bash
+                git clone https://github.com/username/repository.git                
 
-    - Replace username with the username of the repository owner and repository with the name of the repository.
+        - Replace username with the username of the repository owner and repository with the name of the repository.
 
     -6. **Press Enter**: Press Enter to execute the command. Git will clone the repository from GitHub to your local machine.
 
