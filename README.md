@@ -655,7 +655,7 @@ To use and further develop this project you can clone the repository.
 | Contact Us| ![contact us ](media/contact_us_finished.png) |![contact us ](media/contact_us_finished_mobile.png) |
 | User Details | ![user details](media/user_details.png) | ![user details](media/user_details_mobile.png)  |
 | Order History  | ![order history](media/order_history_finished.png)  | ![order history](media/order_history_finished_mobile.png)   |
-| Wishlist | ![wishlist](media/wishlist_finished.png) | ![wishlist](media/_wishlist_finished_mobile.png)  |
+| Wishlist | ![wishlist](media/wishlist_finished.png) | ![wishlist](media/wishlist_finished_mobile.png)  |
 | Bag | ![bag](media/bag_finished.png)  | ![bag](media/bag_finished_mobile.png)  |
 | Checkout | ![checkout](media/checkout_finished.png) | ![checkout](media/checkout_finished_mobile.png) |
 | Order Confirmation | ![order confirmation](media/order_conf_finished.png) | ![order confirmation](media/order_conf_finished_mobile.png)  |
