@@ -29,19 +29,17 @@ View the deployed website [here](https://clare-golf-store-e14c88b1e5dd.herokuapp
 3. [Features](#features)
    1. [General](#general)
    2. [Home Page](#home-page)
-   3. [Products Page](#products-page)
-   4. [Product Details Page](#product-details-page)
-   5. [Products Admin](#products-admin)
-   5. [Shopping Bag Page](#shopping-bag-page)
-   6. [Checkout Page](#checkout-page)
-   7. [Checkout Success Page](#checkout-success-page)
-   8. [Profile Page](#profile-page)
-   9. [Favorites Page](#favorites-page)
-   10. [Reviews Page](#reviews-page)
-   11. [Reviews Admin](#reviews-admin)
-   12. [Organizations Page](#organizations-page)
-   13. [Accounts Pages](#accounts-pages)
-   14. [404 Error Page](#404-error-page)
+   3. [Header](#header)
+   4. [Call to action](#call-to-action)
+   5. [Newsletter](#newsletter)
+   5. [Footer](#footer)
+   6. [Products](#products)
+   7. [Product Detail](#product-detail)
+   8. [Shopping bag](#shopping-bag)
+   9. [Profile](#profile)
+   10. [Club Fitting](#club-fitting)
+   11. [Footer links](#footer-links)
+   12. [404 Error](#404-error-page)
 4. [Technologies Used](#technologies-used)
     1. [Languages Used](#languages-used)
     2. [Libraries and Frameworks](#languages-and-frameworks)
@@ -365,3 +363,105 @@ To expand our reach beyond our local market, we've established a strong online p
 
 Clare Golf Store is committed to delivering exceptional products and services to golf enthusiasts worldwide. With a strong emphasis on quality, expertise, and customer satisfaction, we strive to become a leading destination for all golfing needs, both online and offline.
 
+***
+
+## Features
+
+### General
+
+- This website was designed to be completely responsive, with bootstrap cols and rows being the base.
+
+### Home Page
+
+![landing/home page](media/landing.png)
+
+- This is what users see when the first load up the website, I wanted it to be very clear what this websites main purpose is immeadiatly on landing.
+
+### **Header**
+
+![header](media/head.png)
+
+- The header on this site is meant to be clean and easy to navigate.
+    - The logo on the left acts as a home button.
+    - The search bar to find products with a key word.
+
+### **Call to action**
+
+![call to action](media/calltoaction.png)
+
+- The call to action section makes it easy for customers to view all available products.
+
+### **Newsletter**
+
+![newsletter](media/newsletter.png)
+
+- The newsletter is placed at the bottom of the home page and is run by mailchimp.
+
+### **Footer**
+
+![footer](media/footer.png)
+
+- The footer here is very simple a lot of sites I found while researching had very cluttered footers.
+
+### **Products**
+
+![products](media/products.png)
+
+- One of my favourite sections to design was this products section, I'm a big fan of the white card and the product adds the color.
+
+### **Product detail**
+
+![product details](media/product_detail.png)
+
+- Similar to the products page I love the way the product itself adds the color to the site.
+
+- When the heart on the page is click it adds a product to the wishlist as seen by the message below.
+
+![wishlist](media/wishlist_success.png)
+
+### **Shopping Bag**
+
+![shopping bag](media/shopping-bag.png)
+
+- This is designed to be very easy to read and navigate to the checkout.
+
+### **Profile** 
+
+![user details](media/user_details.png)
+
+![order history](media/order_history.png)
+
+![wishlist](media/wishlist.png)
+
+- The user profile uses tabs to go through each section it was my first time designing a page this way and I love the idea of it.
+
+### **Club Fitting**
+
+![club fitting](media/booking.png)
+
+![appointments](media/appointments.png)
+
+![edit](media/edit.png)
+
+![no appointments](media/noappointments.png)
+
+-  This is the club fitting booking section, it contains a form and some info about the process.
+- Here you can also see the appointment card I created and what happens if the user has no appointments created.
+
+### **Footer links**
+
+- I provided some links in the footer to replicate the kind of links you'd expect to be on a real online golf store.
+
+![about](media/about.png)
+
+![contact](media/contact.png)
+
+![payment](media/payment.png)
+
+![shipping](media/shipping.png)
+
+### **404 Error page**
+
+![404](media/404.png)
+
+- I also created pages for error 500 and 403 with a link to return to the home page.
