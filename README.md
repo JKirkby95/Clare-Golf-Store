@@ -48,12 +48,10 @@ View the deployed website [here](https://clare-golf-store-e14c88b1e5dd.herokuapp
     5. [Cloud Storage](#cloud-storage)
     6. [Tools and Programs](#tools-and-programs)
 5. [Testing](#testing)
-    1. [Go to TESTING.md](https://github.com/josswe26/noplast/blob/main/TESTING.md#noplast-testing)
+    1. [Go to TESTING.md]()
 6. [Deployment](#deployment)
     1. [How To Use This Project](#how-to-use-this-project)  
-    2. [Deployment to Heroku](#deployment-to-heroku)   
-    3. [AWS Bucket Creation](#aws-bucket-creation)  
-    4. [Connect Django to AWS Bucket](#connect-django-to-aws-bucket)
+    2. [Deployment to Heroku](#deployment-to-heroku)
 7. [Finished Product](#finished-product)
 8. [Credits](#credits)
 9. [Known Bugs](#known-bugs)
@@ -570,3 +568,99 @@ Clare Golf Store is committed to delivering exceptional products and services to
 
 -[Lucid Chart](https://lucid.app/)
     - Lucid Chart was used to build the wireframes and database diagrams for this project.
+
+[Back to top ⇧](#clare-golf-store) 
+
+## Testing
+
+- The testing page can be found[here]()
+
+## Deployment
+
+### How To Use This Project
+To use and further develop this project you can clone the repository.  
+
+
+- To clone a GitHub project for future use, follow these steps:
+
+    - 1. **Find the Repository**: Go to the GitHub repository page of the project you   want to clone. You can search for repositories using GitHub's search feature.
+
+    - 2. **Clone the Repository**: On the repository page, click on the "Code" button. This will reveal a URL. Copy the URL to your clipboard.
+
+    - 3. **Open Terminal (or Command Prompt)**: Open your terminal or command prompt on your local machine.
+
+    - 4. **Navigate to the Directory**: Use the `cd` command to navigate to the directory where you want to clone the repository. For example, if you want to clone it into a directory named "projects", you would type `cd projects`.
+
+    - 5. **Clone the Repository**: Once you're in the desired directory, use the `git clone` command followed by the URL you copied earlier. It should look something like this:
+
+    ```bash
+    git clone https://github.com/username/repository.git
+
+    - Replace username with the username of the repository owner and repository with the name of the repository.
+
+    -6. **Press Enter**: Press Enter to execute the command. Git will clone the repository from GitHub to your local machine.
+
+
+    7. **Access the Cloned Repository**: Once the cloning process is complete, you can access the cloned repository in the directory you specified.
+
+
+- To deploy this page to Heroku from its GitHub repository, the following steps were taken:
+
+### Deployment to Heroku
+
+1. Create the Heroku App:
+     * Select "Create new app" in Heroku.
+    * Choose a name for your app and select the location.
+
+2. Prepare the environment and settings.py file:
+    * In the Settings tab, click on Reveal Config Vars and copy the url next to DATABASE_URL.
+    * In your GitPod workspace, create an env.py file in the main directory. 
+    * Add the DATABASE_URL value and your chosen SECRET_KEY value to the env.py file.
+    * Add the SECRET_KEY value to the Config Vars in Heroku.
+    * Update the settings.py file to import the env file and add the SECRETKEY and DATABASE_URL file paths.
+    * Update the Config Vars with the Cloudinary url, adding into the settings.py file also.
+    * The config vars for the EMAIL_HOST_PASS and EMAIL_HOST_USER also have to be added this time around.
+    * In settings.py add the following sections:
+        * Cloudinary to the INSTALLED_APPS list
+        * STATICFILE_STORAGE
+        * STATICFILES_DIRS
+        * STATIC_ROOT
+        * MEDIA_URL
+        * EMAIL_HOST_PASS
+        * EMAIL_HOST_USER
+        * DEFAULT_FILE_STORAGE
+        * TEMPLATES_DIR
+        * Update DIRS in TEMPLATES with TEMPLATES_DIR
+        * Update ALLOWED_HOSTS with ['app_name.heroku.com', 'localhost']
+
+3. Store Static and Media files in Cloudinary and Deploy to Heroku:
+    * Create three directories in the main directory; media, static and templates.
+    * Create a file named "Procfile" in the main directory and add the following:
+        * web: gunicorn project-name.wsgi
+    * You will have to run the collectstatic cmd before you deploy for the css to be applied.
+    * Go to the Deploy tab on Heroku and connect to GitHub, then to the required repository.
+    Click on the Deploy Branch and wait for the build to load. When the build is complete, the app can be opened through Heroku.
+
+## Finished Product
+
+| Page        | Desktop         | Mobile |
+|-------------|------------------|------------------|
+| Home        | ![home page](media/finished_home.png) | ![home page](media/finished_home_mobile.png) |
+| Products   | ![products](media/finished_products.png) | ![products](media/finished_products_mobile.png)   |
+| Product Detail | ![product detail](media/product_detail_finished.png) |  ![product detail](media/product_detail_finished_mobile.png) |
+| Club Fitting |![club fitting](media/club_fitting_finshed.png)  |  ![club fitting](media/club_fitting_finshed_mobile.png)    |
+| Appointments   |![appointments](media/appointments_finished.png)  | ![appointments](media/appointments_finished_mobile.png)   |
+| No appointments|  ![no appointments](media/noappointments_finished.png) |  ![no appointments](media/noappointments_finished_mobile.png)  |
+| Edit Appointments | ![edit appointments](media/edit_appointment_finished.png) |![edit appointments](media/edit_appointment_finished_mobile.png)|
+| Contact Us| ![contact us ](media/contact_us_finished.png) |![contact us ](media/contact_us_finished_mobile.png) |
+| User Details | ![user details](media/user_details.png) | ![user details](media/user_details_mobile.png)  |
+| Order History  | ![order history](media/order_history_finished.png)  | ![order history](media/order_history_finished_mobile.png)   |
+| Wishlist | ![wishlist](media/wishlist_finished.png) | ![wishlist](media/_wishlist_finished_mobile.png)  |
+| Bag | ![bag](media/bag_finished.png)  | ![bag](media/bag_finished_mobile.png)  |
+| Checkout | ![checkout](media/checkout_finished.png) | ![checkout](media/checkout_finished_mobile.png) |
+| Order Confirmation | ![order confirmation](media/order_conf_finished.png) | ![order confirmation](media/order_conf_finished_mobile.png)  |
+| About Us | ![about us ](media/about_finished.png) |![about us ](media/about_finished_mobile.png)  |
+| Privacy Policy | ![privacy policy](media/privacy_finished.png) | ![privacy policy](media/privacy_finished_mobile.png)  |
+| Shipping | ![shipping](media/shipping_finished.png) | ![shipping](media/shipping_finished_mobile.png) |
+| Payment | ![payment](media/payment_finished.png)  |![payment](media/payment_finished_mobile.png)  |
+
