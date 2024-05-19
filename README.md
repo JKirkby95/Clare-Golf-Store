@@ -573,7 +573,103 @@ Clare Golf Store is committed to delivering exceptional products and services to
 
 ## Testing
 
-- The testing page can be found[here]()
+### Lighthouse
+
+- The lighthouse test results for each page can be found below:
+
+Home
+
+![home page lighthouse](media/home_light.png)
+
+***
+
+Products Page
+
+![products page lighthouse](media/products_light.png)
+
+***
+
+Product Details Page
+
+
+![product details page lighthouse](media/product_details_light.png)
+
+***
+
+Club Fitting Page
+
+![club fitting light](media/club_fitting_finshed_mobile.png)
+
+***
+
+Appointments Page
+
+![appointments lighthouse](media/appointments_light.png)
+
+***
+
+Edit Appointments Page
+
+![edit appointments lighthosue](media/edit%20_light.png)
+
+***
+Shoppping Bag Page
+
+![shopping bag lighthouse](media/shopping_light.png)
+
+***
+
+Checkout Page
+
+![checkout page lighthouse](media/checkout_light.png)
+
+***
+
+Order Confirmation Page
+
+![order confirmation page](media/order_confirmation_light.png)
+
+***
+
+Profile Page
+
+![profile page lighthouse](media/profile_light.png)
+
+***
+
+About us
+
+![about us ](media/about_light.png)
+
+***
+
+Privacy Policy
+
+![privacy policy](media/privacy_light.png)
+
+***
+
+Contact Us Page
+
+![contact us](media/contact_light.png)
+
+***
+
+Shipping Page
+
+![shipping page lighthouse](media/shipping_light.png)
+
+***
+
+Payment options page
+
+![payment options lighthouse](media/payment_light.png)
+
+***
+
+
+
+
 
 ## Deployment
 
