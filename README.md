@@ -732,15 +732,57 @@ Ultra wide monitor | Some appearance issues, but functionality all good | Fail (
     Feature | Outcome | Pass/Fail
     --- | --- | ---
     Nav links |  Links are working as expected. | Pass
-    Home booking button| Opens booking form as expected | Pass
-    Booking links in pricing page | Opens booking form as expected | Pass
-    Social Links | Open the specific website on a new tab. | Pass
-    Booking form | Appears as expected and sends correct data to the database. | Pass
-    Appointments Card | Showing all data and allowing editing and deletion. | Pass
-    Login | Working as expected, login features being shown to user | Pass
-    Sign up | Working as expected, and redirects user to login page | Pass
+    Call to action | Opens all products page as expected | Pass
+    Search bar | searches the full products database and returns results | Pass 
+    Account button | Opens dropdown for the users account | Pass
+    Bag button | Opens the uses current bag | Pass
+    Logo link | sends users back to the  home page | Pass
+    Delivery banner animation | switches between the two lines of text as expected | Pass
+    Newsletter sign up | Gives the user a notifcation and users email is seen on mailchimp as a result | Pass
+    Footer links | Working as expected, social links open in a new tab | Pass
+    Sign up | Working as expected, and redirects user page for email confirmation| Pass
+    Email confirmation | Confirms users email and allows them to log in| Pass
+    Log in | Logs user in , password and username must be correct so validation is working | Pass
     Sign out | Working as expected, hides features for logged in users| Pass
+    Reset password | Sends user the email link to reset in good time and works as expected | 
+    Products Sorting | Sorting products by category, price ,name and rating all work correctly | Pass
+    Products home link | Loads the all products page as it should | Pass
+    Wishlist button on products page | Add's product to users wishlist as expected | Pass
+    Product Cards | Hover effect and reponsive code from Boutique ado walkthrough work as expected | Pass
+    Back to top button | Works as expected and will take the user back to the top of the products page | Pass
+    Product details wishlist | Add's product to users wishlist as expected | Pass
+    Product details buttons | keep shopping button and add to bag work as expected | Pass
+    Product details quantity buttons | Currently not working as expected both buttons add the product to the bag | Fail further testing needed
+    Product details quantity text box | This feature does work as expected so the user can still adjust the quantity | Pass
+    Add to bag message | Displays the current bag and if neccessary the delivery threashold got to check button on this also works. | Pass
+    Bag quantity buttons | working as expected, decrement is disabled when value is 1. Update and remove buttons work. | Pass
+    Bag buttons | keep shopping button and secure checkout as expected | Pass
+    Bag total | Bag displays the correct grand total of the order | Pass
+    Checkout Form | fills in details already provided by the user | Pass
+    Checkout Form validation | I required fiels is not filled out the from will not submit | Pass
+    Card validation | Stripe need a valid card number or date, correct error shows below the card input field | Pass
+    Checkout Form Save | Saves details to the users profile ad expected | Pass
+    Checkout Form buttons | Adjust bag and complete order buttons work as expected | Pass
+    Order Confirmation page | Shows order details and the keep shopping button works as expected | Pass
+    Booking form | Form works as expected shows list of all available clubs and Fitters | Pass
+    Booking form validation | All fields must be required for the form to process | Pass
+    Booking form buttons | Both buttons work as expected | Pass
+    Appointments Page | Appointment details show as expected edit/delete buttons also working | Pass
+    Appointments page header | Shows user name at the top | Pass
     Appointment security | Working as expected, prevents other users from editing appointments not created by them. | Pass
+    Profile page | User details save and are displayed correctly | Pass
+    Profile page | Update information button works as expected | Pass
+    Profile page | Order history is correct and the links to the order confirmation number work as expected | Pass
+    Profile page | User details save and are displayed correctly | Pass
+    Wishlist | Wishlist is displayed correctly user can click the product to go to the product details page | Pass
+    Wishlist | The remove from wishlist button and the javascript text for it work as expected | Pass
+    About us | Map displays correctly and in the right location | Pass
+    Privacy Policy | Page displays correctly and the contact button sends the user to the contact us form | Pass
+    Shipping | Page displays correctly and the contact button sends the user to the contact us form | 
+    Payment Options | Page displays correctly and the contact button sends the user to the contact us form | Pass
+    Contact Us Form | Form works as expected and is displayed correctly | Pass
+    Contact Us From Validation | From validation works as expected, the name ,email and message fiels are required. The last field is NOT. | Pass
+    Contact Us form backend | The form sends the correct data to the django admin and elephant sql database | Pass
 
 
 
