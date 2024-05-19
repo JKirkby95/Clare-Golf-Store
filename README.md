@@ -598,7 +598,7 @@ Product Details Page
 
 Club Fitting Page
 
-![club fitting light](media/club_fitting_finshed_mobile.png)
+![club fitting light](media/club_fitting_light.png)
 
 ***
 
@@ -667,6 +667,80 @@ Payment options page
 
 ***
 
+### Code Validtion
+
+### HTML
+
+![Code validation]()
+
+- All HTML pages were validated using [W3C Markup Validator](https://validator.w3.org/).
+
+***
+
+### CSS
+
+![Css validation]()
+
+- My CSS was validated using [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
+
+### Javascript
+
+![Javascript validation]()
+
+- My Javascript was validated using [JSHint](https://jshint.com/).
+
+***
+
+### Python 
+
+![Python Validation]()
+
+- The PEP8 tool provided by Code Institute was used to validate my python link to which is [here.](https://pep8ci.herokuapp.com/)
+
+
+***
+
+### Manual Testing
+
+**Browser Compatibility**
+
+Browser | Outcome | Pass/Fail  
+--- | --- | ---
+Google Chrome | No appearance, responsiveness or functionality issues.| Pass
+Safari | No appearance, responsiveness or functionality issues. | Pass
+Brave | No appearance, responsiveness or functionality issues. | Pass
+Microsoft Edge | No appearance, responsiveness or functionality issues. | Pass
+Firefox Developer | No appearance, responsiveness or functionality issues. | Pass
+
+
+**Device compatibility**
+
+Device | Outcome | Pass/Fail
+--- | --- | ---
+HP Pavillion 14" display | No appearance, responsiveness or functionality issues. | Pass
+Custom Home PC with 28" display  | No appearance, responsiveness or functionality issues. | Pass
+MSI Katana GF66 11UE | No appearance, responsiveness or functionality issues. | Pass
+Iphone 14 Pro | No appearance, responsiveness or functionality issues. | Pass
+Nothing Phone (1) | No appearance, responsiveness or functionality issues. | Pass
+One Plus 8T| No appearance, responsiveness or functionality issues. | Pass
+Ultra wide monitor | Some appearance issues, but functionality all good | Fail (something to note for my next project)
+
+**Common Elements Testing**
+
+- General
+
+    Feature | Outcome | Pass/Fail
+    --- | --- | ---
+    Nav links |  Links are working as expected. | Pass
+    Home booking button| Opens booking form as expected | Pass
+    Booking links in pricing page | Opens booking form as expected | Pass
+    Social Links | Open the specific website on a new tab. | Pass
+    Booking form | Appears as expected and sends correct data to the database. | Pass
+    Appointments Card | Showing all data and allowing editing and deletion. | Pass
+    Login | Working as expected, login features being shown to user | Pass
+    Sign up | Working as expected, and redirects user to login page | Pass
+    Sign out | Working as expected, hides features for logged in users| Pass
+    Appointment security | Working as expected, prevents other users from editing appointments not created by them. | Pass
 
 
 
