@@ -4,6 +4,7 @@ from products.models import Category
 from datetime import datetime, time
 from django.utils import timezone
 
+
 class ClubFittingForm(forms.ModelForm):
     customer = forms.CharField(
         max_length=100, widget=forms.TextInput(attrs={"class": "form-control"})
@@ -22,18 +23,19 @@ class ClubFittingForm(forms.ModelForm):
         empty_label="Select a Fitter"
     )
     service = forms.ModelChoiceField(
-        queryset=Service.objects.none(),  # Ensure the queryset is initialized as empty
+        queryset=Service.objects.none(),
         widget=forms.Select(attrs={"class": "form-control"}),
         empty_label="Select a Service"
     )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        
+
         # Filter products by specific categories
         category_names = ['Drivers', 'Woods', 'Irons', 'Wedges', 'Putters']
         categories = Category.objects.filter(name__in=category_names)
-        self.fields['club'].queryset = Product.objects.filter(category__in=categories).distinct()
+        self.fields['club'].queryset = Product.objects.filter(
+            category__in=categories).distinct()
 
         time_slots = [("", "---------")]
         current_time = time(9, 0)
@@ -99,6 +101,10 @@ class ClubFittingForm(forms.ModelForm):
             "service",  # Include the service field in the form
         ]
         widgets = {
-            "appointment_date": forms.DateInput(attrs={"type": "date", "class": "form-control"}),
-            "appointment_time": forms.TimeInput(attrs={"type": "time", "class": "form-control"}),
+            "appointment_date": forms.DateInput(
+                attrs={"type": "date", "class": "form-control"}
+            ),
+            "appointment_time": forms.TimeInput(
+                attrs={"type": "time", "class": "form-control"}
+            ),
         }

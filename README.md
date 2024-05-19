@@ -671,7 +671,7 @@ Payment options page
 
 ### HTML
 
-![Code validation]()
+![Code validation](media/html_validation.png)
 
 - All HTML pages were validated using [W3C Markup Validator](https://validator.w3.org/).
 
@@ -679,13 +679,13 @@ Payment options page
 
 ### CSS
 
-![Css validation]()
+![Css validation](media/css_validation.png)
 
 - My CSS was validated using [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 ### Javascript
 
-![Javascript validation]()
+![Javascript validation](media/js_validation.png)
 
 - My Javascript was validated using [JSHint](https://jshint.com/).
 
@@ -693,7 +693,7 @@ Payment options page
 
 ### Python 
 
-![Python Validation]()
+![Python Validation](media/python_validation.png)
 
 - The PEP8 tool provided by Code Institute was used to validate my python link to which is [here.](https://pep8ci.herokuapp.com/)
 

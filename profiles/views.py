@@ -43,7 +43,6 @@ def profile(request):
     return render(request, template, context)
 
 
-
 @login_required
 def order_history(request, order_number):
     order = get_object_or_404(Order, order_number=order_number)
@@ -66,10 +65,10 @@ def order_history(request, order_number):
 def wishlist_view(request):
     """ Display user's wishlist. """
     wishlist = get_object_or_404(Wishlist, user=request.user)
-    template = 'profiles/profile.html'  
+    template = 'profiles/profile.html'
     context = {
         'wishlist': wishlist,
-        'from_profile': True,  
+        'from_profile': True,
     }
     return render(request, template, context)
 
@@ -86,7 +85,8 @@ def add_to_wishlist(request, item_id):
         messages.info(request, f"{product.name} is already on your Wishlist!")
     else:
         wishlist.products.add(product)
-        messages.success(request, f"{product.name} has been added to your Wishlist!")
+        messages.success(
+            request, f"{product.name} has been added to your Wishlist!")
 
     return redirect('profile')
 
@@ -101,7 +101,8 @@ def remove_from_wishlist(request, item_id):
 
         if product in wishlist.products.all():
             wishlist.products.remove(product)
-            messages.success(request, f"{product.name} has been removed from your Wishlist!")
+            messages.success(
+                request, f"{product.name} has been removed from your Wishlist")
             return HttpResponse(status=200)
         else:
             messages.info(request, f"{product.name} is not in your Wishlist.")
@@ -110,4 +111,3 @@ def remove_from_wishlist(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item from wishlist: {e}')
         return HttpResponse(status=500)
-

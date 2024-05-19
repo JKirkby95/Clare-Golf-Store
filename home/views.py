@@ -19,9 +19,10 @@ def contact_view(request):
                 f'Message from {contact_message.name}',
                 contact_message.message,
                 contact_message.email,
-                ['claregolfclub@example.com'],  
+                ['claregolfclub@example.com'],
             )
-            messages.success(request, 'Your message has been sent successfully!')
+            messages.success(
+                request, 'Your message has been sent successfully!')
             return redirect('home')
     else:
         form = ContactForm()
