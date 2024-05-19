@@ -641,6 +641,10 @@ To use and further develop this project you can clone the repository.
     * Go to the Deploy tab on Heroku and connect to GitHub, then to the required repository.
     Click on the Deploy Branch and wait for the build to load. When the build is complete, the app can be opened through Heroku.
 
+[Back to top ⇧](#clare-golf-store) 
+
+***
+
 ## Finished Product
 
 | Page        | Desktop         | Mobile |
@@ -663,4 +667,30 @@ To use and further develop this project you can clone the repository.
 | Privacy Policy | ![privacy policy](media/privacy_finished.png) | ![privacy policy](media/privacy_finished_mobile.png)  |
 | Shipping | ![shipping](media/shipping_finished.png) | ![shipping](media/shipping_finished_mobile.png) |
 | Payment | ![payment](media/payment_finished.png)  |![payment](media/payment_finished_mobile.png)  |
+
+[Back to top ⇧](#clare-golf-store) 
+
+***
+
+
+## Credits
+
+- I'd actually like to credit my local golf club here in shannon they gave some advice on what to add to the site.
+
+- Inspiration was taken various users from [Youtube](https://www.youtube.com/).
+
+
+***
+
+## Known Bugs
+
+
+
+## Acknowledgements
+
+- Everyone in the Code Institute Slack community.
+
+- My mentor Marcel, for his fantastic feeback and for breaking this down and making it seem possible for me.
+
+- My family, for allowing me some time to myself to complete this.
 
