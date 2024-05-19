@@ -254,3 +254,43 @@ As it was my first time making an ecommerce site , my user stories are not in th
 *** 
 
 ### Structure
+
+***
+
+#### Database Model
+
+I made this database model using [lucid chart](https://lucid.app/), it was my first time using anything like this to create a database diagram. I tried to show all the links between the certain elements of this website.
+
+![database diagram](media/db-model.png)
+
+### Skeleton
+
+#### Wireframes
+
+I made these wireframes using [lucid chart](https://lucid.app/) also, I found them very easy to use although in future I would probably buy a membership for balsamiq as I prefer the look of their wireframes.
+
+Page | Wireframe
+--- | --- 
+Home | ![Home](media/home_wire.png) |
+Products| ![Products](media/products_wire.png) |
+User Profile | ![Profile](media/user_wire.png) |
+Club Fitting | ![Club fitting](media/booking_wire.png) |
+Shopping Bag | ![Shoppping Bag](media/bag_wire.png)
+
+[Back to top ⇧](#clare-golf-store)
+
+
+### Surface
+
+#### Color Scheme
+
+The color scheme for this site was meant to be easy on the eye and not take away from the content, the main colors I used was the bootstrap dark and light class.
+I used light over white so it's not quite as harsh on the eyes, and I'm personally a fan of the boostrap dark it's very clean color and lets any products with color pop.
+
+![color scheme](media/color_scheme.png)
+
+#### Typography
+
+The font used for this site is Nunito.
+
+Nunito is an excellent choice for your website's font due to its modern, clean, and highly readable design. As a sans-serif typeface, it provides a sleek and contemporary aesthetic that enhances the visual appeal of your site.
