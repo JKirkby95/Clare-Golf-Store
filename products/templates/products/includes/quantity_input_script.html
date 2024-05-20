@@ -1,4 +1,4 @@
-<script>
+<script type="text/javascript">
 
     /* 
     * Disable +/- buttons outside 1-99 range.
@@ -39,37 +39,22 @@
         handleEnableDisable(itemId, size);
     });
 
-    // Increment quantity
     $('.increment-qty').click(function(e) {
-       e.preventDefault();
-       console.log('Increment button clicked');
-       var itemId = $(this).data('item_id');
-       var size = $(this).data('size');
-       var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-       if (size) {
-          var allQuantityInputs = $(`.input-group-${itemId} input[data-size='${size}']`);
-       } else {
-          var allQuantityInputs = $(`.input-group-${itemId} input[name='quantity']`);
-       }
-       var currentValue = parseInt($(closestInput).val());
-       $(allQuantityInputs).val(currentValue + 1);
-       handleEnableDisable(itemId, size);
+        e.preventDefault()
+        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        var currentValue = parseInt($(closestInput).val());
+        $(closestInput).val(currentValue + 1);
+        var itemId = $(this).data('item_id')
+        handleEnableDisable(itemId);
     });
 
     // Decrement quantity
     $('.decrement-qty').click(function(e) {
-       e.preventDefault();
-       console.log('Decrement button clicked');
-       var itemId = $(this).data('item_id');
-       var size = $(this).data('size');
-       var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
-       if (size) {
-          var allQuantityInputs = $(`.input-group-${itemId} input[data-size='${size}']`);
-       } else {
-          var allQuantityInputs = $(`.input-group-${itemId} input[name='quantity']`);
-       }
-       var currentValue = parseInt($(closestInput).val());
-       $(allQuantityInputs).val(currentValue - 1);
-       handleEnableDisable(itemId, size);
+        e.preventDefault()
+        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        var currentValue = parseInt($(closestInput).val());
+        $(closestInput).val(currentValue - 1);
+        var itemId = $(this).data('item_id')
+        handleEnableDisable(itemId);
     });
 </script>
