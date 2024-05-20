@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 from .forms import ProductForm
 from .models import Product, Category
 
-# Create your views here.
+# Views for all products / details and managment
 
 
 def all_products(request):

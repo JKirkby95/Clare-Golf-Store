@@ -29,7 +29,8 @@ class Appointment(models.Model):
     service = models.ForeignKey(Service, on_delete=models.CASCADE)
     club = models.ForeignKey(Product, on_delete=models.CASCADE)
     notes = models.TextField(blank=True, null=True)
-    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL, null=True)
+    user_profile = models.ForeignKey(
+        UserProfile, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return f"{self.customer} - {self.appointment_date} at {self.appointment_time}"

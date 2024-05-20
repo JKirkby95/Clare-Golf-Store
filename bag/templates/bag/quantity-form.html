@@ -1,3 +1,4 @@
+<!-- form for updating bag quantity and removing items -->
 <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
     {% csrf_token %}
     <div class="form-group">
@@ -30,6 +31,7 @@
         </div>
     </div>
 </form>
+<!-- confirm changes here or remove -->
 <a class="update-link text-info"><small>Update</small></a>
 <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><small>Remove</small></a>
 

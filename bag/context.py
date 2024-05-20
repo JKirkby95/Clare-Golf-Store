@@ -3,6 +3,8 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
+# Calculating bag total , delivery cost or viewing bag contents
+
 
 def bag_contents(request):
 

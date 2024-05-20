@@ -19,6 +19,7 @@
                 <h2 class="logo-font mb-4 text-center">Club Fitting Management</h2>
                 <h5 class="text-muted text-center">Edit Appointment</h5>
                 <hr>
+                <!-- Edit current appointment -->
                 <form method="post" class="form mb-2">
                     {% csrf_token %}
                     {% for field in form %}

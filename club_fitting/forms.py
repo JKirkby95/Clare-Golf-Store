@@ -5,6 +5,7 @@ from datetime import datetime, time
 from django.utils import timezone
 
 
+#  form for booking club fitting
 class ClubFittingForm(forms.ModelForm):
     customer = forms.CharField(
         max_length=100, widget=forms.TextInput(attrs={"class": "form-control"})
@@ -31,12 +32,13 @@ class ClubFittingForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        # Filter products by specific categories
+        # Only showing the clubs from the store
         category_names = ['Drivers', 'Woods', 'Irons', 'Wedges', 'Putters']
         categories = Category.objects.filter(name__in=category_names)
         self.fields['club'].queryset = Product.objects.filter(
             category__in=categories).distinct()
 
+        # only allowing appointments between 9-5
         time_slots = [("", "---------")]
         current_time = time(9, 0)
         while current_time <= time(17, 0):
@@ -98,7 +100,7 @@ class ClubFittingForm(forms.ModelForm):
             "customer",
             "club",
             "fitter",
-            "service",  # Include the service field in the form
+            "service",
         ]
         widgets = {
             "appointment_date": forms.DateInput(

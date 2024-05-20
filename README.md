@@ -896,7 +896,13 @@ To use and further develop this project you can clone the repository.
 
 ## Known Bugs
 
+- The loading spinner stopped working for me, I was unable to find the cause of this.
 
+- For my remove from bag button i get a html error for the remove_{{ item.id }} part, i dont believe this affects the site in a bad way. But if i remove it or change it the remove function stops working so I deceided to keep it.
+
+- I found one strange bug with the profile dropdown menu, sometimes the cursor pointer effect wouldn't take place so I was unable to click anything in there. But a quick refresh of the page does fix it so I'm not sure what the problem is (could be on all dropdowns but I only noticed on the profile).
+
+- I also found that a double click of the add to bag button can add the product twice, i could possibly fix this in a later version of the site with some javascript.
 
 ## Acknowledgements
 
